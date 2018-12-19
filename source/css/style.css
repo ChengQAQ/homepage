@@ -1,11 +1,35 @@
-@charset "UTF-8";
+@media only screen and (max-width: 1000px){
+    main{
+        width:80%;
+    }
+    .content{
+        margin-top: 1%;
+        background: rgba(192, 246, 113, 0.7);
+        width: auto;
+        height: auto;
+        align-items: center;
+        border-radius: 5px;
+    }
+    ul{
+        width: auto;
+    }
+    li{
+        width: auto;
+    }
+    #links{
+        width: auto;
+        align-items: center;
+    }
+}
 a {
     text-decoration: none;
 }
-body, html {
+
+html{
     height: 100%;
 }
 body {
+    width: auto;
     display: flex;
     align-items: center;
     align-content: center;
@@ -18,16 +42,21 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
-main{
-    background: rgba(69, 199, 136, 0.8);
+.content{
+    margin-top: 40%;
+    background: rgba(192, 246, 113, 0.7);
     width: auto;
+    height: auto;
     align-items: center;
     border-radius: 5px;
+}
+main{
+
 }
 .header{
     width: auto;
     align-items: center;
-    text-align:center
+    text-align:center;
 }
 .avater{
     width: auto;
@@ -38,9 +67,17 @@ main{
 }
 .title{
     width: auto;
+    line-height: normal;
     font-family: Consolas;
     text-align: center;
     font-size: 40px;
+    color: white;
+}
+.title-sub{
+    width: auto;
+    font-family: Consolas;
+    text-align: center;
+    font-size: 20px;
     color: white;
 }
 *, *:before, *:after {
@@ -91,6 +128,7 @@ ul li {
     position: relative;
     width: 96px;
     height: 96px;
+    text-align: center;
 }
 .link a {
     -webkit-transform-origin: 48px 48px -48px;
@@ -316,4 +354,11 @@ ul li {
 .cube.homepage div:nth-child(6) {
     background: white;
     color: #4183c4;
+}
+.hitokoto{
+    width: 100%;
+    text-align: center;
+    font-family: "Microsoft YaHei UI";
+    color: white;
+    word-wrap:break-word ;
 }
